@@ -51,19 +51,124 @@ footer {
     left: 0px;
 }
 
+.item:hover {
+    color: #c2c2c2;
+    -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+  -webkit-mask-size: 200%;
+  animation: shine 2s infinite;
+}
+
+@-webkit-keyframes shine {
+    from {
+      -webkit-mask-position: 150%;
+    }
+    
+    to {
+      -webkit-mask-position: -50%;
+    }
+  }
+
 .item {
     position: relative;
     text-decoration: none;
     color: #f8f8ff;
     font-size: 25px;
     margin-top: 10px;
+    margin-left: 30px;
+    left: -40px;
     
 }
 
-.description {
+
+.text-input:focus {
+    outline: 0 none;
+}
+
+.text-area {
+    position: relative;
+    top: 70%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    height: 300px;
+    border-radius: 25px;
+    border: 2px solid #6666ff;
+    background-color: #b2b2ff;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #f8f8ff;
+    margin-top: 160px;
+    margin-left: 0px;
+    resize: none;
+}
+
+
+.submit:hover {
+    background-color: #5c5cdd;
+    color: #f8f8ff;
+}
+
+.submit {
     position: absolute;
-    top: 24%;
+    top: 93%;
     left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    background-color: #6666ff;
+    color: #f8f8ff;
+    height: 50px;
+    width: 150px;
+    border-radius: 600px;
+    font-size: 16px;
+    cursor: pointer;
+    
+}
+
+.form-title {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    color: #6666ff;
+}
+
+.text-input {
+    position: relative;
+    top: 10%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    height: 30px;
+    border-radius: 25px;
+    border: 2px solid #6666ff;
+    background-color: #b2b2ff;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #f8f8ff;
+    margin-top: 30px;
+    margin-left: 0px;
+}
+
+.form {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20%;
+    height: 55%;
+    background-color: #b2b2ff;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.description {
+    position: relative;
+    top: 330px;
+    left: 50%;
+    width: 80%;
     transform: translate(-50%, -50%);
   
     font-size: 25px;
